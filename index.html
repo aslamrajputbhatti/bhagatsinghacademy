@@ -13,6 +13,14 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="stylesheet" href="style.css">
+    <style>
+        @media (max-width: 800px) {
+            .trust-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+            .trust-grid > div { min-width: 0; }
+            .trust-grid strong, .trust-grid > div span:last-child { min-width: 0; overflow-wrap: anywhere; }
+            .training-list article { min-width: 0; }
+        }
+    </style>
 </head>
 <body>
 <header class="site-header">
